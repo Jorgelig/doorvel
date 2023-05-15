@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    env_file:
+      - ../.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - database
+
+  api:
+    build: .
+    command: sh -c 'sleep 10 && python manage.py runserver 0.0.0.0:8000'
+    restart: always
+    env_file:
+      - ../.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    networks:
+      - database
+
+
+volumes:
+  db-data:
+
+networks:
+  database:
+    driver: bridge

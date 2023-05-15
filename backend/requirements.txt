@@ -1,0 +1,10 @@
+Django==3.2.4
+djangorestframework==3.12.4
+django-cors-headers==4.0.0
+psycopg2-binary==2.9.1
+mysqlclient==2.1.1
+mysql-connector-python==8.0.33
+pandas==2.0.1
+numpy==1.24.3
+xlrd==2.0.1
+requests==2.30.0
