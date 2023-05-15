@@ -1,0 +1,1 @@
+docker-compose -p doorvel-stack -f docker-compose-production.yml up -d --force-recreate

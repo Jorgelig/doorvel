@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    env_file:
+      - ../.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - database
+
+  api:
+    build: .
+    command: sh -c 'sleep 10 && python manage.py runserver 0.0.0.0:8000'
+    restart: always
+    env_file:
+      - ../.env
+    expose:
+      - 8000
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: Host:develop-api-doorvel.jorgeliglabs.com
+      traefik.port: "8000"
+    networks:
+      - database
+      - web
+
+volumes:
+  db-data:
+
+networks:
+  database:
+    driver: bridge
+  web:
+        external: true

@@ -1,0 +1,32 @@
+version: "3"
+
+networks:
+  web:
+        external: true
+
+services:
+  front:
+    build:
+      context: .
+      args:
+        BASE_IMAGE_ENVIRONMENT: 'develop'
+    environment:
+      NODE_ENV: develop
+    env_file:
+      - ../.env
+    volumes:
+      - doorvel:/app
+      - /app/node_modules
+    networks:
+     - web
+    labels:
+      traefik.enable: 'true'
+      traefik.frontend.rule: "Host:${FRONT_HOST}"
+      traefik.port: '3000'
+
+volumes:
+  doorvel:
+    driver_opts:
+      type: none
+      device: $PWD
+      o: bind
