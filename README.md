@@ -12,13 +12,10 @@ Desafio para doorvel incluyendo backend con un api Django y front usando Next.js
 - [X] Implementación de buenas prácticas de desarrollo
 - [X] Evaluación de la arquitectura y estructura de archivos
 - [X] Uso de estilos CSS o SCSS modules: Se implemento el theme de Mui para personalizar componentes con el branding de doorvel.
-- [ X ] Evaluación de la calidad de código y uso de librerías/herramientas adicionales: Se implementaron Layouts, hooks y servicios para aislar lo mejor posible la logica de la aplicacion de la implementacion.
-- [ X ] Evaluación de la experiencia de usuario (UX): Se cuido las descripciones y Snackbar para dar feedback al usuario
-- [ Extra ] Docker: Se utilizó Docker para contenerizar tanto el proyecto backend como el proyecto frontend. Esto permite tener un entorno de desarrollo aislado y reproducible, facilitando la configuración y eliminando posibles conflictos de dependencias.
-- [ Extra ] Makefile: Se incluyó un archivo Makefile en la raíz del proyecto para automatizar tareas comunes, como iniciar los contenedores, detenerlos, limpiar el entorno, realizar migraciones de base de datos, sembrar datos de prueba, etc. El uso de Makefile simplifica el proceso de desarrollo y reduce la necesidad de escribir comandos largos y complicados manualmente.
-- [ Extra ] 
-- [ Extra ] 
-- [ Extra ] 
+- [X] Evaluación de la calidad de código y uso de librerías/herramientas adicionales: Se implementaron Layouts, hooks y servicios para aislar lo mejor posible la logica de la aplicacion de la implementacion.
+- [X] Evaluación de la experiencia de usuario (UX): Se cuido las descripciones y Snackbar para dar feedback al usuario
+- [X] (Extra) Docker: Se utilizó Docker para contenerizar tanto el proyecto backend como el proyecto frontend. Esto permite tener un entorno de desarrollo aislado y reproducible, facilitando la configuración y eliminando posibles conflictos de dependencias.
+- [X] (Extra) Makefile: Se incluyó un archivo Makefile en la raíz del proyecto para automatizar tareas comunes, como iniciar los contenedores, detenerlos, limpiar el entorno, realizar migraciones de base de datos, sembrar datos de prueba, etc. El uso de Makefile simplifica el proceso de desarrollo y reduce la necesidad de escribir comandos largos y complicados manualmente.
 
 ### Requerimientos
 
