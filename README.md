@@ -79,4 +79,34 @@ Si deseas eliminar todo lo relacionado con los contenedores, puedes usar:
    ```
 Esto eliminará los contenedores, imágenes, volúmenes y redes relacionados con el proyecto.
 
+## Capturas
+#### Make start
+![Make_start](assets/images/make_start.png)
+#### Back - Migracion en api
+![Migrate](assets/images/make_migrate.png)
+
+#### Back - Seed para poblar la BD
+![Migrate](assets/images/import_seed.png)
+
+#### Back - Seed exitoso
+![Migrate](assets/images/make_migrate_ok.png)
+
+#### Back - Api lista
+![API_OK](assets/images/api_ok.png)
+
+#### Front - Login
+Solo se captura el nombre del usuario para dejarlo visible en la barrade navegacion
+![Home](/assets/images/doorvel_home.png)
+
+#### Front - Busqueda de colonias por codigo postal usando el api de Django
+![postal_code_search](assets/images/catalogs_top.png)
+#### Busqueda exitosa
+![postal_code_ok](assets/images/catalogs_postal_code_ok.png)
+#### No se encontro codigo postal
+![postal_code_fail](assets/images/catalogs_postal_code_fail.png)
+#### Listado de catalogos de amenidades y subamenidades
+![ammenities_list](assets/images/catalogs_aamenities_list.png)
+#### Detalle de subamenidad usando rutas dinamicas de nextjs
+![subammenities_detail](assets/images/catalogs_amenities_detail.png)
+
 
